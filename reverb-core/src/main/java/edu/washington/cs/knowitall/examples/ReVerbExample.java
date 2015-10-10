@@ -24,7 +24,7 @@ public class ReVerbExample {
 
     public static void main(String[] args) throws Exception {
 
-        String sentStr = "Bananas are an excellent source of potassium.";
+        String sentStr = "As we known, bananas are an excellent source of potassium.";
 
         // Looks on the classpath for the default model files.
         OpenNlpSentenceChunker chunker = new OpenNlpSentenceChunker();
@@ -56,6 +56,7 @@ public class ReVerbExample {
             System.out.println("Arg1=" + extrNorm.getArgument1Norm());
             System.out.println("Rel=" + extrNorm.getRelationNorm());
             System.out.println("Arg2=" + extrNorm.getArgument2Norm());
+            System.out.println(extr.getSentence());
         }
     }
 }
